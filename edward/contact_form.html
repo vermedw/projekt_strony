@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- to samo co wcześniej-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/gif" href="img/icon.gif">
+
+</head>
+
+<header class="flex-header">
+    <div class="header-section" id="back">&lt; Strona główna</div>
+    <a href="main.html" class="header-section">&lt; Moja podstrona</a>
+</header>
+
+<body>
+    <h2 class="type-line">Formularz :) </h2>
+
+    <form class="contact-form">
+        <label for="name">Imie:</label><br>
+        <input type="text" id="name" name="name" required 
+            placeholder="Podaj Imię"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required 
+            placeholder="Podaj Email ( bababa@przykład.com )"><br><br>
+
+        <label for="message">Wiadomość:</label><br>
+        <textarea id="message" name="message" rows="5" required
+            placeholder="Wpisz swoją wiadomość"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</body>

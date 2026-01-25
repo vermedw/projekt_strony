@@ -32,6 +32,7 @@ body::after {
     margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
+    max-width: 100%;
 
     animation: typing 2s steps(14, end) forwards;
     text-shadow: 0 0 5px #00ff55;
@@ -86,17 +87,20 @@ section.collapsed>p:not(.label) {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     border-bottom: 1px solid #00ff55;
 }
 
 .header-section {
+    text-decoration: none; /* zabiera _ z linków! */
+    font-weight: bold;
     cursor: pointer;
     padding: 5px 10px;
     transition: background 0.3s;
 }
 
 .header-section:hover {
+    font-style: italic;
     background: rgba(0, 255, 85, 0.2);
     border-radius: 4px;
 }
@@ -140,4 +144,50 @@ footer {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
+}
+
+
+
+/*------------- FORMULARZ -----------------*/
+.contact-form {
+    padding: 40px 20px;
+    border: 2px solid #00ff55;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label{
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ff55;
+}
+
+.contact-form input,
+.contact-form textarea{
+    background-color: #000;
+    color: #00ff55;
+    border: 1px solid #00ff55;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: -9px;
+    border-radius: 4px;
+    resize: none;
+}
+
+
+.contact-form button{
+    background-color: #000;
+    color: #00ff55;    
+    border: 1px solid #00ff55;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form button:hover {
+    background-color: #00ff55;
+    color: #000;
 }
