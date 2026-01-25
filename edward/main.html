@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- działa bez problemu na macu, ale nie na windowsie :/  -->
+    <link rel="icon" type="image/gif" href="img/icon.gif">
+
+</head>
+
+<header class="flex-header">
+    <div class="header-section" id="back">&lt; Back</div>
+    <div class="header-section" id="contact">Contact</div>
+    <div class="header-section" id="more">More</div>
+</header>
+
+<body>
+    <h1 class="type-line"> Edward Korbus </h1>
+
+    <div class="flex-grid">
+        <section class="grid-col side-col">
+            <p>reklama</p>
+        </section>
+
+        <section class="grid-col main-col">
+            <div class="terminal">
+                <section>
+                    <p class="label" onclick="this.parentElement.classList.toggle('collapsed')">&gt; about_me:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum urna nec orci cursus,
+                        id pharetra nisl volutpat.</p>
+                </section>
+
+                <section>
+                    <p class="label" onclick="this.parentElement.classList.toggle('collapsed')">&gt; skills:</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Sed do eiusmod tempor incididunt</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p class="label" onclick="this.parentElement.classList.toggle('collapsed')">&gt; projects:</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis posuere lorem, id
+                        dignissim justo tristique sit amet.</p>
+                </section>
+
+                <section>
+                    <p class="label" onclick="this.parentElement.classList.toggle('collapsed')">&gt; contact:</p>
+                    <p>Lorem ipsum dolor sit amet — email@example.com</p>
+                </section>
+            </div>
+
+        </section>
+
+        <section class="grid-col side-col">
+            <p>reklama</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 poo poo pee pee
+    </footer>
+
+</body>
+
+
+
+</html>
