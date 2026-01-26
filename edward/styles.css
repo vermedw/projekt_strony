@@ -178,7 +178,9 @@ footer {
 
 .contact-form button{
     background-color: #000;
-    color: #00ff55;    
+    color: #00ff55;   
+    font-weight: bold; 
+    text-shadow: 0 0 3px #00ff55;
     border: 1px solid #00ff55;
     padding: 8px;
     width: 100%;
