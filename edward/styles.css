@@ -45,11 +45,23 @@ body::after {
     border-radius: 4px;
 }
 
+.wrap {
+    display: flex;
+    justify-content: center;
+    gap: 4px; /* spacing */
+}
+.wrap img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: auto;
+}
+
 
 /* -- typewriter -- */
 .type-line {
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
     white-space: nowrap;
     max-width: 100%;
@@ -64,7 +76,7 @@ body::after {
     }
 
     to {
-        width: 14ch;
+        width: 15ch;
     }
 }
 
@@ -117,7 +129,6 @@ section.collapsed>p:not(.label) {
     flex: 1.2;
     display: flex;
     justify-content: center;
-    align-items: center;
     border: 2px solid #00ff55;
     padding: 200px 0;
 }
@@ -128,6 +139,10 @@ section.collapsed>p:not(.label) {
 @media (max-width: 1200px) {
     .side-col {
         display: none;
+    }
+    .wrap img {
+        width: 60px;
+
     }
 }
 
