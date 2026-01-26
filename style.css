@@ -12,7 +12,9 @@ body {
 
 /* -- header -- */
 header {
-    margin-top: 60px;
+    margin-top: 20px;
+    color: antiquewhite;
+    text-shadow: 0 0 6px #00000075;
     text-align: center;
 }
 h1 {
@@ -34,6 +36,7 @@ h1 {
 @media (max-width: 900px) {
     .grid-container {
         flex-direction: column;
+        margin-bottom: 60px;
     }
 }
 
