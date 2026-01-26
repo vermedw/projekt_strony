@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizytówka – Andrii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+     <nav class="nav">
+        <h1>Projekt HTML</h1>
+        <ul class="menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="andrii.html" class="active" >O mnie</a></li>
+            <li><a href="#kontakt" >Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- (biografja)---------------------------------------------------------------- -->
+    <section class="profile-container">
+        <article class="card profile-card">
+            <img src="img/profile.jpg" alt="Zdjęcie Andrii">
+            <h2>Andrii Ivanochko</h2>
+            <p>Student informatyki</p>
+        </article>
+
+        <article class="card bio-card">
+            <h2>Krótka biografia</h2>
+            <p>
+                Cześć wszystkim. Nazywam się Andrii, jak wspomniano, jestem studentem informatyki.
+                Urodziłem się w 2008 roku. Ukończyłem szkołę w 2025 roku.
+                 Obecnie jestem studentem <a href="https://kul.pl/" target="_blank"> Katolickiego Uniwersytetu Lubelskiego</a>.
+                 Interesuję się projektowaniem stron internetowych i web designem.
+                 W wolnym czasie lubię uczyć się czegoś nowego, 
+                 interesuję się piłką nożną i lubię podróżować.
+            </p>
+        </article>
+    </section>
+
+    <!-- (informacja)------------------------------------------------------------------ -->
+    <section class="info-windows" >
+        <div class="info-card"  >
+            <h3>🎓 Edukacja</h3>
+            <p><a href="https://kul.pl/" target="_blank">Katolicki Uniwersytet Lubelski w Lublinie</a></p>
+        </div>
+
+        <div class="info-card">
+            <h3>💻 Umiejętności</h3>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Flexbox & Grid</li>
+                <li>Podstawy C++ i Python</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>📌 Zainteresowania</h3>
+            <p>Programowanie, strony internetowe, nowe technologie, gry komputerowe, podróże.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📧 Kontakt</h3>
+            <p>Email: <a href="mailto:andry@student.kul.pl">andry@student.kul.pl</a></p>
+        </div>
+    </section>
+
+    <!-- (mailto)----------------------------------------------------------------- -->
+    <section id="kontakt" class="contact">
+
+        <h2>Formularz kontaktowy</h2>
+        <form class="form" action="mailto:andry@student.kul.pl" method="post" enctype="text/plain">
+            <label>
+                Imię:
+                <input type="text" name="name" placeholder="Wpisz imię" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="Wpisz email" required>
+            </label>
+
+            <label>
+                Wiadomość:
+                <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
+            </label>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+</main>
+<!-- (footer)----------------------------------------------------------------- --> 
+<footer>
+<section >
+    <h3>Znajdź mnie w sieci:</h3>
+    <a href="mailto:andry@student.kul.pl" target="_blank">
+         <img src="img/email.jpg" width="32" alt="Email">
+    </a> 
+    <a href="https://www.facebook.com/share/1QEJ655PgC/?mibextid=wwXIfr" target="_blank"> 
+        <img src="img/facebook.jpg" width="32" alt="Facebook">
+    </a> 
+    <a href="https://www.instagram.com/an_ivanochko?igsh=MWdmeW44OWF4bHcwNw%3D%3D&utm_source=qr" target="_blank"> 
+         <img src="img/instagram.jpg" width="32" alt="Instagram">
+    </a>
+</section>
+
+<a href="README.md" target="_blank" class="readme-link" style="margin: 10px 0; display: inline-block;">
+    <i>📄</i> Dokumentacja projektu</a>
+
+    <p>© 2026 Andrii Ivanochko – Student Informatyki</p>
+    
+
+</footer>
+
+</body>
+</html>
