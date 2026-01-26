@@ -1,32 +1,52 @@
-/* Global styles */
+/* -- globalna czcionka */
 * {
     font-family: "Courier New", Courier, monospace;
     color: #00ff55;
 }
-
 body {
     background: #000;
     margin: 0;
     padding: 20px;
 }
 
-/* Background lines */
+/* -- tło --  */
 body::after {
     content: "";
     pointer-events: none;
     position: fixed;
     inset: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(0, 255, 0, 0.15) 0,
-        rgba(0, 255, 0, 0.15) 3px,
-        transparent 3px,
-        transparent 7px
-    );
+    background: repeating-linear-gradient(to bottom,
+            rgba(0, 255, 0, 0.15) 0,
+            rgba(0, 255, 0, 0.15) 3px,
+            transparent 3px,
+            transparent 7px);
     opacity: 0.5;
 }
 
-/* Typewriter animation */
+/* -- header -- */
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #00ff55;
+}
+.header-section {
+    text-decoration: none; /* zabiera _ z linków! */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+.header-section:hover {
+    font-style: italic;
+    background: rgba(0, 255, 85, 0.2);
+    border-radius: 4px;
+}
+
+
+/* -- typewriter -- */
 .type-line {
     text-align: center;
     margin: 0 auto;
@@ -39,11 +59,16 @@ body::after {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 14ch; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14ch;
+    }
 }
 
-/* Terminal sections */
+/* ===== główne ciało strony ===== */
 .terminal {
     max-width: 900px;
     margin: 0 auto;
@@ -51,12 +76,10 @@ body::after {
     letter-spacing: 1px;
     text-shadow: 0 0 5px #00ff55;
 }
-
 .terminal section {
     margin-bottom: 20px;
 }
 
-/* Collapsible labels */
 .label {
     display: inline-block;
     font-weight: bold;
@@ -74,38 +97,12 @@ section>p:not(.label) {
     transition: max-height 0.5s ease, opacity 0.5s ease;
     opacity: 1;
 }
-
 section.collapsed>ul,
 section.collapsed>p:not(.label) {
     max-height: 0;
     opacity: 0;
 }
 
-/* Flex header */
-.flex-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 4px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #00ff55;
-}
-
-.header-section {
-    text-decoration: none; /* zabiera _ z linków! */
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px 10px;
-    transition: background 0.3s;
-}
-
-.header-section:hover {
-    font-style: italic;
-    background: rgba(0, 255, 85, 0.2);
-    border-radius: 4px;
-}
-
-/* Flex grid layout */
 .flex-grid {
     display: flex;
     gap: 20px;
@@ -113,9 +110,9 @@ section.collapsed>p:not(.label) {
     align-items: center;
     padding: 10px;
 }
-
-.main-col { flex: 5; }
-
+.main-col {
+    flex: 5;
+}
 .side-col {
     flex: 1.2;
     display: flex;
@@ -124,27 +121,43 @@ section.collapsed>p:not(.label) {
     border: 2px solid #00ff55;
     padding: 200px 0;
 }
+/* ============== */
 
+
+/* -- mobile first -- */
 @media (max-width: 1200px) {
-    .side-col { display: none; }
+    .side-col {
+        display: none;
+    }
 }
 
-/* Lists */
+/* -- listy -- */
 ul {
     list-style: none;
     padding-left: 20px;
     margin: 5px 0 15px 0;
 }
-ul li::before { content: " - "; }
 
-/* Footer */
+ul li::before {
+    content: " - ";
+}
+
+
+/* -- footer -- */
 footer {
     position: fixed;
+    width: 100%;
     bottom: 0;
     margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+.side-img {
+    width: 70px;
+    height: 70px;
+}
+
 
 
 
@@ -157,13 +170,13 @@ footer {
     margin: 0 auto;
 }
 
-.contact-form label{
+.contact-form label {
     font-weight: bold;
     text-shadow: 0 0 3px #00ff55;
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
     background-color: #000;
     color: #00ff55;
     border: 1px solid #00ff55;
@@ -176,10 +189,10 @@ footer {
 }
 
 
-.contact-form button{
+.contact-form button {
     background-color: #000;
-    color: #00ff55;   
-    font-weight: bold; 
+    color: #00ff55;
+    font-weight: bold;
     text-shadow: 0 0 3px #00ff55;
     border: 1px solid #00ff55;
     padding: 8px;
@@ -189,6 +202,7 @@ footer {
     cursor: pointer;
     transition: background 0.3s;
 }
+
 .contact-form button:hover {
     background-color: #00ff55;
     color: #000;
