@@ -68,3 +68,42 @@ h1 {
     opacity: 0.75;
     font-size: 0.9rem;
 }
+
+
+
+
+/* footer */
+html,body {
+    height : 100%;
+    margin : 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+
+footer {
+    background:  linear-gradient(135deg, #d50b0b 0%, #e2ae04 50%, #222222 100%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-left: auto;
+}
+
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

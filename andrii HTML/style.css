@@ -146,14 +146,6 @@ header {
     background: #0088cc;
 }
 
-/* footer */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
 /* rensponsive */
 @media (max-width: 768px) {
     .profile-container {
@@ -165,19 +157,28 @@ footer {
 
 
 /* footer */
-html, body {
-    height: 100%;  
-     margin: 0;    
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+html,body {
+    height : 100%;
+    margin : 0;
 }
 
 body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-main {
-    flex: 1; 
+main{
+    flex: 1;
 }
+
 
 footer {
     background:  linear-gradient(135deg, #0b52d5 0%, #7704e2 50%, #222222 100%);
@@ -213,9 +214,6 @@ html {
     background-size: cover;      
     background-repeat: no-repeat;
     background-position: center; 
-}
+   }
 
 
-html {
-  scroll-behavior: smooth;
-}
