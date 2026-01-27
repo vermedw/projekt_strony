@@ -59,16 +59,32 @@ body::after {
 
 
 /* -- typewriter -- */
-.type-line {
+#clickable{
+    cursor: pointer;
+}
+.typewriter {
+    user-select: none;
     text-align: center;
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
     max-width: 100%;
-
     animation: typing 2s steps(14, end) forwards;
     text-shadow: 0 0 5px #00ff55;
 }
+.collapsible .wrap {
+    overflow: hidden;
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.collapsible.collapsed .wrap {
+    max-height: 0;
+    opacity: 0;
+}
+
+
 
 @keyframes typing {
     from {
@@ -76,7 +92,7 @@ body::after {
     }
 
     to {
-        width: 15ch;
+        width: 20ch;
     }
 }
 
@@ -100,7 +116,6 @@ body::after {
     padding: 0;
 }
 
-/*TO_DO: zmien na konkretną klase */
 section>ul,
 section>p:not(.label) {
     margin: 0;
