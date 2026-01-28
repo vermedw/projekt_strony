@@ -207,11 +207,14 @@ html {
 
 /* background */
 
-   body {
-    background-image: url('img/bg-profile.jpg');
-    background-size: cover;      
-    background-repeat: no-repeat;
-    background-position: center; 
-   }
+html, body {
+  min-height: 100%;
+}
 
-
+body {
+  background-image: url("img/bg-profile.jpg");
+  background-size: cover;        /* фото масштабується */
+  background-position: center;   /* завжди по центру */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* тримається при скролі */
+}
