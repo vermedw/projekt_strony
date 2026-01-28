@@ -213,8 +213,8 @@ html, body {
 
 body {
   background-image: url("img/bg-profile.jpg");
-  background-size: cover;        /* фото масштабується */
-  background-position: center;   /* завжди по центру */
+  background-size: cover;        
+  background-position: center;   
   background-repeat: no-repeat;
-  background-attachment: fixed;  /* тримається при скролі */
+  background-attachment: fixed;  
 }
